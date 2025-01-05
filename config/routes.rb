@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
   devise_for :users
   get "static_page/home"
-  get "static_page/about"
-  get "static_page/contact_us"
-  get "static_page/help"
+  get "about", to: "static_page#about", as: :about
+  get "contact", to: "static_page#contact_us", as: :contact
+  get "help", to: "static_page#help", as: :help
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.

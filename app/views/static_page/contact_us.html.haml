@@ -1,0 +1,17 @@
+.flex.flex-wrap
+  .w-full.my-6.pr-0.lg:pr-2{:class => "lg:w-1/2"}
+    %h3.text-lg Contact Form
+    .leading-loose
+      %form.p-10.bg-white.rounded.shadow-xl
+        %div
+          %label.block.text-sm.text-gray-600{:for => "name"} Name
+          %input#name.w-full.px-5.py-1.text-gray-700.bg-gray-200.rounded{"aria-label" => "Name", :name => "name", :placeholder => "Your Name", :required => "", :type => "text"}/
+        .mt-2
+          %label.block.text-sm.text-gray-600{:for => "email"} Email
+          %input#email.w-full.px-5.py-4.text-gray-700.bg-gray-200.rounded{"aria-label" => "Email", :name => "email", :placeholder => "Your Email", :required => "", :type => "text"}/
+        .mt-2
+          %label.block.text-sm.text-gray-600{:for => "message"} Message
+          %textarea#message.w-full.px-5.py-2.text-gray-700.bg-gray-200.rounded{"aria-label" => "Email", :name => "message", :placeholder => "Your inquiry..", :required => "", :rows => "6"}
+        .mt-6
+          %button.px-4.py-1.text-white.font-light.tracking-wider.bg-gray-900.rounded{:type => "submit"} Submit
+  
